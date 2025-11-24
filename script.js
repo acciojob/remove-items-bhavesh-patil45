@@ -1,6 +1,7 @@
-const select = document.querySelector('select');
+const select = document.getElementById("colorSelect");
+const btn = document.querySelector('input[type="button"][value="Select and Remove"]');
 
-select.addEventListener("change", () => {
+btn.addEventListener("click", () => {
     const selectedOption = select.options[select.selectedIndex];
-    selectedOption.remove();   
+    selectedOption.remove();  
 });
